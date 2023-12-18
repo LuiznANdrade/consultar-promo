@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/1127720158555807854/1134996805239722106/logotipo.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Promoção - PMERJ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="group-container">
+        <h1>Consulta de Promoção - PMERJ</h1>
+        <label for="patente">Selecione a Patente:</label>
+        <select id="patente">
+            <option value="">Selecione sua Patente</option>
+            <option value="Capitao">Capitão</option>
+            <option value="1Tenente">1° Tenente</option>
+            <option value="2Tenente">2° Tenente</option>
+            <option value="Aspirante">Aspirante a Oficial</option>
+            <option value="SubTenente">Sub-Tenente</option>
+            <option value="1Sargento">1° Sargento</option>
+            <option value="2Sargento">2° Sargento</option>
+            <option value="3Sargento">3° Sargento</option>
+            <option value="Cabo">Cabo</option>
+            <option value="Soldado1Classe">Soldado de 1ª Classe</option>
+            <option value="Soldado2Classe">Soldado de 2ª Classe</option>
+            <option value="Recruta">Recruta</option>
+        </select>
+    
+        <label for="instrutor" style="display: none;">Selecione a atribuição:</label>
+        <select style="display: none;" id="instrutor">
+            <option value="">Selecione sua atribuição</option>
+            <option value="InstrutorRecrutamento">Instrutor de Recrutamento</option>
+            <option value="InstrutorCurso">Instrutor de Curso</option>
+            <option value="InstrutorGeral">Instrutor de Geral</option>
+            <option value="ControleInterno">Controle Interno</option>
+            <option value="Administrativo">Administrativo</option>
+        </select>
+    
+        <label for="dataEntrada">Data Ultima Promoção:</label>
+        <input type="date" id="dataEntrada">
+    
+        <button onclick="calcularPromocao()">Consultar</button>
+    
+        <p id="resultado"></p>
+    </div>
+    <img src="REPUBLICA.svg" alt="">
+    <script src="script.js"></script>
+</body>
+</html>
